@@ -7,6 +7,17 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Gatsby-Bootstrap",
+    title: 'Gatsby-Bootstrap'
   },
-}
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+        ignore: [`**/\.*`] // ignore files starting with a dot
+      }
+    },
+    { resolve: `gatsby-transformer-remark` }
+  ]
+};
