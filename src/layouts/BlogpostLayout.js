@@ -4,14 +4,14 @@ import Footer from '../components/Footer';
 import { graphql } from 'gatsby';
 
 const BlogpostLayout = ({ data }) => {
-  const post = data.markdownRemark;
+  const post = data.wordpressPost;
   return (
     <div>
-      <Header title="Header of Index Page"></Header>
+      <Header></Header>
       <div className="container">
         <div className="row justify-content-md-center">
-          <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+          <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
       </div>
       <Footer></Footer>
@@ -23,11 +23,9 @@ export default BlogpostLayout;
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-      }
+    wordpressPost(slug: { eq: $slug }) {
+      content
+      title
     }
   }
 `;
