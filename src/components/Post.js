@@ -1,13 +1,10 @@
-import React from "react"
-import { Card, Button } from "react-bootstrap"
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
 const Post = props => (
   <div className="p-3">
     <Card>
-      <Card.Img
-        variant="top"
-        src="https://avatars3.githubusercontent.com/u/12551863?s=400&v=4"
-      />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.excerpt}</Card.Text>
@@ -15,6 +12,6 @@ const Post = props => (
       </Card.Body>
     </Card>
   </div>
-)
+);
 
-export default Post
+export default Post;

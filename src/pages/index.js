@@ -7,10 +7,13 @@ export default ({ data }) => {
   console.log(data);
   return (
     <PrimaryLayout column="col-xs-6">
-      <Post
-        title="This is our first post"
-        excerpt="Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Paisis, filhis, espiritis santis. "
-      ></Post>
+      {data.allMarkdownRemark.nodes.map(node => (
+        <Post
+          image={node.frontmatter.image}
+          title={node.frontmatter.title}
+          excerpt={node.excerpt}
+        ></Post>
+      ))}
     </PrimaryLayout>
   );
 };
