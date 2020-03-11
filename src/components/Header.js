@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Navbar, Nav } from "react-bootstrap"
+import React from 'react';
+import { Link } from 'gatsby';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default props => (
   <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="#home">Gatsby-Bootstrap</Navbar.Brand>
+    <Navbar.Brand href="/">Gatsby-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
@@ -20,4 +20,4 @@ export default props => (
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-)
+);

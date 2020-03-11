@@ -12,6 +12,7 @@ export default ({ data }) => {
           image={node.frontmatter.image}
           title={node.frontmatter.title}
           excerpt={node.excerpt}
+          readMore={node.fields.slug}
         ></Post>
       ))}
     </PrimaryLayout>
@@ -30,6 +31,9 @@ export const query = graphql`
         }
         excerpt
         html
+        fields {
+          slug
+        }
       }
     }
   }
