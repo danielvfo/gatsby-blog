@@ -12,8 +12,12 @@ const Post = props => (
           alt={props.alt || innertext(props.title)}
         />
         <Card.Body>
-          <Card.Title dangerouslySetInnerHTML={{ __html: props.title }} />
-          <Card.Text dangerouslySetInnerHTML={{ __html: props.excerpt }} />
+          <Card.Title>
+            <div dangerouslySetInnerHTML={{ __html: props.title }}></div>
+          </Card.Title>
+          <Card.Text>
+            <div dangerouslySetInnerHTML={{ __html: props.excerpt }}></div>
+          </Card.Text>
           <Button variant="primary" href={props.readMore}>
             Read more...
           </Button>
