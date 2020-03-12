@@ -34,6 +34,18 @@ module.exports = {
         hostingWPCOM: true
       }
     },
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Blog`,
+        short_name: `Gatsby`,
+        start_url: `/`,
+        background_color: `#f8f9fa`,
+        theme_color: `#FFFFFF`,
+        display: `standalone`
+      }
+    },
+    `gatsby-plugin-offline`
   ]
 };
