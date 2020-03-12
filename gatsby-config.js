@@ -29,9 +29,9 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `codingsrc.com`,
-        protocol: `http`,
-        hostingWPCOM: false
+        baseUrl: `soengade.wordpress.com`,
+        protocol: `https`,
+        hostingWPCOM: true
       }
     },
     `gatsby-plugin-react-helmet`

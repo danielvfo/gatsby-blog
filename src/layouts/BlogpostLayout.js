@@ -12,7 +12,7 @@ const BlogpostLayout = ({ data }) => {
       <SEO
         title={innertext(post.title)}
         description={innertext(post.excerpt)}
-        image={post.featured_media.source_url}
+        image={post.jetpack_featured_media_url}
         keywords={post.categories.map(category => category.name).join(', ')}
       ></SEO>
       <Header></Header>
@@ -36,9 +36,7 @@ export const query = graphql`
     wordpressPost(slug: { eq: $slug }) {
       content
       title
-      featured_media {
-        source_url
-      }
+      jetpack_featured_media_url
       categories {
         name
       }

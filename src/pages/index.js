@@ -9,8 +9,8 @@ export default ({ data }) => {
     <PrimaryLayout column="col-xs-6">
       {data.allWordpressPost.nodes.map(node => (
         <Post
-          alt={node.featured_media.slug}
-          image={node.featured_media.source_url}
+          alt={node.slug}
+          image={node.jetpack_featured_media_url}
           title={node.title}
           excerpt={node.excerpt}
           readMore={node.slug}
@@ -27,10 +27,7 @@ export const query = graphql`
         slug
         title
         excerpt
-        featured_media {
-          source_url
-          slug
-        }
+        jetpack_featured_media_url
       }
     }
   }
