@@ -1,9 +1,11 @@
-import React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const PrimaryLayout = props => (
   <div>
+    <SEO></SEO>
     <Header title="Header of Index Page"></Header>
     <div className="container">
       <div className="row justify-content-md-center">
@@ -12,6 +14,6 @@ const PrimaryLayout = props => (
     </div>
     <Footer></Footer>
   </div>
-)
+);
 
-export default PrimaryLayout
+export default PrimaryLayout;
