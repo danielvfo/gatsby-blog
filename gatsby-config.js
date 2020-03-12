@@ -7,7 +7,14 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Gatsby-Bootstrap'
+    title: 'Gatsby Blog',
+    description:
+      'Blog criado utilizando React e Gatsby afins de compartilhar conteúdo específicos de Tecnologia da Informação. Todo o conteúdo é extraído via WordPress.',
+    keywords:
+      'gatsby, gatsbyjs, react, wordpress, blog, learn, aprender, criar, create',
+    image:
+      'https://www.gatsbyjs.org/static/gatsby-icon-4a9773549091c227cd2eb82ccd9c5e3a.png',
+    url: 'https://www.gatsbyjs.org/'
   },
   plugins: [
     {
