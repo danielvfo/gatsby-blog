@@ -2,7 +2,7 @@
   "name": "gatsby-blog",
   "private": false,
   "description": "A blog built using Gatsby, React and Wordpress for learning purposes",
-  "version": "0.1.0",
+  "version": "1.0.03",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
