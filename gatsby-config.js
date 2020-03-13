@@ -14,7 +14,7 @@ module.exports = {
       'gatsby, gatsbyjs, react, wordpress, blog, learn, aprender, criar, create',
     image:
       'https://www.gatsbyjs.org/static/gatsby-icon-4a9773549091c227cd2eb82ccd9c5e3a.png',
-    url: 'https://www.gatsbyjs.org/'
+    url: 'https://gatsby-blog.azurewebsites.net'
   },
   plugins: [
     {
