@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"+eM2":function(o,n,e){},JPBO:function(o,n,e){o.exports={footer:"Footer-module--footer--1c9am"}},rMck:function(o,n,e){}}]);
-//# sourceMappingURL=styles-f63e80a8822084e7dbc6.js.map
