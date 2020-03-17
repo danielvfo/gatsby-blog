@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{h5Py:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),i=n.n(a),r=n("Wbzz"),c=n("rY4l");t.default=function(){return i.a.createElement("div",null,i.a.createElement(c.a,{title:"Header of Test Page"}),i.a.createElement("h1",null,"This is a test page!"),i.a.createElement("button",{onClick:function(){return Object(r.navigate)("/")}},"Navigate Home"))}}}]);
+//# sourceMappingURL=component---src-pages-test-js-1995aeb8064df07db214.js.map
